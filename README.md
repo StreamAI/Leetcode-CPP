@@ -16,10 +16,14 @@ Solutions to LeetCode by C/C++
 | 146  | [LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/description/) | Medium     | Linked list \| Hash Table                              | C++      |
 | 240  | [搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/description/) | Medium     | Binary Search \| Array                                 | C++      |
 | 322  | [零钱兑换](https://leetcode-cn.com/problems/coin-change/description/) | Medium     | Dynamic Programming                                    | C++      |
+| 387  | [字符串中的第一个唯一字符](https://leetcode-cn.com/problems/first-unique-character-in-a-string/description/) | Easy       | Hash Table \| String                                   | C++      |
+| 424  | [替换后的最长重复字符](https://leetcode-cn.com/problems/longest-repeating-character-replacement/description/) | Medium     | Sliding Window \| Two Pointers                         | C++      |
 | 442  | [数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/description/) | Medium     | Array                                                  | C \| C++ |
 | 509  | [斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/description/) | Easy       | Math                                                   | C++      |
 | 518  | [零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/description/) | Medium     | Dynamic Programming                                    | C++      |
 | 567  | [字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/description/) | Medium     | Sliding Window \| Two Pointers \| Hash Table \| String | C++      |
 | 704  | [二分查找](https://leetcode-cn.com/problems/binary-search/description/) | Easy       | Binary Search \| Array                                 | C++      |
+| 717  | [1比特与2比特字符](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/description/) | Easy       | Array                                                  | C++      |
 | 752  | [打开转盘锁](https://leetcode-cn.com/problems/open-the-lock/description/) | Medium     | Breadth First Search                                   | C++      |
+| 777  | [在LR字符串中交换相邻字符](https://leetcode-cn.com/problems/swap-adjacent-in-lr-string/description/) | Medium     | Array \| String                                        | C++      |
 
