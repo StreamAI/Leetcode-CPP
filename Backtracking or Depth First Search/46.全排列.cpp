@@ -9,33 +9,33 @@
 using namespace std;
 
 class Solution {
-private:
-    vector<vector<int>> res = {};
 public:
     vector<vector<int>> permute(vector<int>& nums) {
-        if(nums.size() < 1) 
+        int count = nums.size();
+        if(count < 1) 
             return {};
         
-        vector<int> track = {};
-        vector<bool> used(nums.size(), false);
-        backtrack(nums, track, used);
+        vector<int> track;
+        vector<bool> used(count, false);
+        vector<vector<int>> res;
+        backtrack(nums, count, track, 0, used, res);
 
         return res;
     }
 
-    void backtrack(vector<int>& nums, vector<int>& track, vector<bool>& used){
-        if(track.size() == nums.size()){
+    void backtrack(vector<int>& nums, const int& count, vector<int>& track, const int& index, vector<bool>& used, vector<vector<int>>& res){
+        if(index == count){
             res.push_back(track);
             return;
         }
 
-        for (int i = 0; i < nums.size(); ++i)
+        for (int i = 0; i < count; ++i)
         {
             if(used[i] == true)
                 continue;
             used[i] = true;
             track.push_back(nums[i]);
-            backtrack(nums, track, used);
+            backtrack(nums, count, track, index + 1, used, res);
             track.pop_back();
             used[i] = false;
         }  
