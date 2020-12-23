@@ -12,34 +12,31 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> permuteUnique(vector<int>& nums) {
-        int count = nums.size();
-        if(count < 1)
-            return {};
-
-        vector<int> track;
-        vector<bool> used(count, false);
         vector<vector<int>> res;
+        vector<int> track;
+        vector<bool> used(nums.size(), false);
+
         sort(nums.begin(), nums.end());
-        backTrack(nums, count, track, 0, used, res);
+        backTrack(nums, track, used, res);
 
         return res;
     }
 
-    void backTrack(vector<int>& nums, const int& count, vector<int>& track, const int& index, vector<bool>& used, vector<vector<int>>& res){
-        if(index == count){
+    void backTrack(vector<int>& nums, vector<int>& track, vector<bool>& used, vector<vector<int>>& res){
+        if(track.size() == nums.size()){
             res.push_back(track);
             return;
         }
 
-        for(int i = 0; i < count; ++i){
+        for(int i = 0; i < nums.size(); ++i){
             if(used[i] == true || (i > 0 && nums[i] == nums[i - 1] && used[i - 1] == false))
                 continue;
 
             track.push_back(nums[i]);
             used[i] = true;
-            backTrack(nums, count, track, index + 1, used, res);
-            used[i] = false;
+            backTrack(nums, track, used, res);
             track.pop_back();
+            used[i] = false;
         }
     }
 };
