@@ -7,6 +7,7 @@ Solutions to LeetCode by C/C++
 | ---- | ------------------------------------------------------------ | ---------- | --------------------------------------------------------- | -------- |
 | 1    | [两数之和](https://leetcode-cn.com/problems/two-sum/description/) | Easy       | Array<br/>Hash Table                                      | C<br>C++ |
 | 3    | [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/description/) | Medium     | Sliding Window<br/>Two Pointers<br/>Hash Table<br/>String | C++      |
+| 17   | [电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/description/) | Medium     | Backtracking or DFS                                       | C++      |
 | 28   | [实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/description/) | Easy       | Two Pointers<br/>String                                   | C++      |
 | 34   | [在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | Medium     | Binary Search<br/>Array                                   | C++      |
 | 39   | [组合总和](https://leetcode-cn.com/problems/combination-sum/description/) | Medium     | Backtracking or DFS                                       | C++      |
@@ -16,6 +17,7 @@ Solutions to LeetCode by C/C++
 | 51   | [N 皇后](https://leetcode-cn.com/problems/n-queens/description/) | Hard       | Backtracking or DFS                                       | C++      |
 | 74   | [搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/description/) | Medium     | Binary Search<br/>Array                                   | C \| C++ |
 | 76   | [最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/description/) | Hard       | Sliding Window<br/>Two Pointers<br/>Hash Table<br/>String | C++      |
+| 77   | [组合](https://leetcode-cn.com/problems/combinations/description/) | Medium     | Backtracking or DFS                                       | C++      |
 | 111  | [二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/description/) | Easy       | Breadth First Search<br/>Tree                             | C++      |
 | 146  | [LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/description/) | Medium     | Linked list<br/>Hash Table                                | C++      |
 | 216  | [组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/description/) | Medium     | Backtracking or DFS                                       | C++      |
