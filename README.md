@@ -16,6 +16,7 @@ Solutions to LeetCode by C/C++
 | 46   | [全排列](https://leetcode-cn.com/problems/permutations/description/) | Medium     | Backtracking or DFS                                       | C++      |
 | 47   | [全排列 II](https://leetcode-cn.com/problems/permutations-ii/description/) | Medium     | Backtracking or DFS                                       | C++      |
 | 51   | [N 皇后](https://leetcode-cn.com/problems/n-queens/description/) | Hard       | Backtracking or DFS                                       | C++      |
+| 52   | [N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/description/) | Hard       | Backtracking or DFS                                       | C++      |
 | 53   | [最大子序和](https://leetcode-cn.com/problems/maximum-subarray/description/) | Easy       | Dynamic Programming                                       | C++      |
 | 72   | [编辑距离](https://leetcode-cn.com/problems/edit-distance/description/) | Hard       | Dynamic Programming<br/>String                            | C++      |
 | 74   | [搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/description/) | Medium     | Binary Search<br/>Array                                   | C \| C++ |
