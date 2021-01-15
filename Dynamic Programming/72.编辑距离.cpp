@@ -14,29 +14,55 @@ public:
     int minDistance(string word1, string word2) {
         int len1 = word1.length();
         int len2 = word2.length();
-        if(len1 == 0 || len2 == 0)
-            return len1 + len2;
-
-        vector<vector<int>> dp(len1+1, vector<int>(len2+1, INT_MAX));
-        for(int s1 = 0; s1 <= len1; ++s1)
-            dp[s1][0] = s1;
-        for(int s2 = 0; s2 <= len2; ++s2)
-            dp[0][s2] = s2;
-
-        for(int s1 = 1; s1 <= len1; ++s1){
-            for(int s2 = 1; s2 <= len2; ++s2){
-                if(word1[s1-1] == word2[s2-1])
-                    dp[s1][s2] = dp[s1-1][s2-1];
-                else{
-                    int rep = dp[s1-1][s2-1] + 1;
-                    int ins = dp[s1][s2-1] + 1;
-                    int del = dp[s1-1][s2] + 1;
-                    dp[s1][s2] = min(rep, min(ins, del));
+        
+        // 创建状态转移表
+        int dp[len1 + 1][len2 + 1];
+        // 初始化状态转移表，也即其中一个字符串为空时的情况
+        for(int i = 0; i <= len1; ++i)
+            dp[i][0] = i;
+        for(int j = 0; j <= len2; ++j)
+            dp[0][j] = j;
+        // 按照状态转移方程从初始状态往后依次填表
+        for(int i = 1; i <= len1; ++i){
+            for(int j = 1; j <= len2; ++j){
+                if(word1[i-1] == word2[j-1]){
+                    dp[i][j] = dp[i - 1][j - 1];
+                }else{
+                    int ins = dp[i][j - 1] + 1;
+                    int del = dp[i - 1][j] + 1;
+                    int rep = dp[i - 1][j - 1] + 1;
+                    dp[i][j] = min(rep, min(ins, del));
                 }
             }
         }
+        
+        //vector<vector<int>> memo(len1+1, vector<int>(len2+1, INT_MAX));
+        //dp_memo(word1, len1, word2, len2, memo);
+
         return dp[len1][len2];
     }
+    /*
+    int dp_memo(string word1, int i, string word2, int j, vector<vector<int>>& memo){
+        if(i == 0 || j == 0){
+            return i + j;
+        }
+
+        if(memo[i][j] < INT_MAX)
+            return memo[i][j];
+        else{
+            if(word1[i - 1] == word2[j - 1]){
+                memo[i][j] = dp_memo(word1, i - 1, word2, j - 1, memo);
+                return memo[i][j];
+            } else {
+                int rep = dp_memo(word1, i - 1, word2, j - 1, memo) + 1;
+                int ins = dp_memo(word1, i, word2, j - 1, memo) + 1;
+                int del = dp_memo(word1, i - 1, word2, j, memo) + 1;
+                memo[i][j] = min(rep, min(ins, del));
+                return memo[i][j];
+            }
+        }
+    }
+    */
 };
 // @lc code=end
 

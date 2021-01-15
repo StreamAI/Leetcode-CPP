@@ -13,6 +13,7 @@ Solutions to LeetCode by C/C++
 | 34   | [在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | Medium     | Binary Search<br/>Array                                   | C++      |
 | 39   | [组合总和](https://leetcode-cn.com/problems/combination-sum/description/) | Medium     | Backtracking or DFS                                       | C++      |
 | 40   | [组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/description/) | Medium     | Backtracking or DFS                                       | C++      |
+| 44   | [通配符匹配](https://leetcode-cn.com/problems/wildcard-matching/description/) | Hard       | Dynamic Programming<br/>Backtracking or DFS               | C++      |
 | 46   | [全排列](https://leetcode-cn.com/problems/permutations/description/) | Medium     | Backtracking or DFS                                       | C++      |
 | 47   | [全排列 II](https://leetcode-cn.com/problems/permutations-ii/description/) | Medium     | Backtracking or DFS                                       | C++      |
 | 51   | [N 皇后](https://leetcode-cn.com/problems/n-queens/description/) | Hard       | Backtracking or DFS                                       | C++      |
